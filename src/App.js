@@ -31,27 +31,21 @@ class App extends Component {
   render () {
     return (
       <div>
-        <Custom
-          id={customs[0].id}
-          image={customs[0].image}
-          name={customs[0].name}
-          location={customs[0].location}
-          explanation={customs[0].explanation}
-        />
-        <Custom
-          id={customs[1].id}
-          image={customs[1].image}
-          name={customs[1].name}
-          location={customs[1].location}
-          explanation={customs[1].explanation}
-        />
-        <Custom
-          id={customs[2].id}
-          image={customs[2].image}
-          name={customs[2].name}
-          location={customs[2].location}
-          explanation={customs[2].explanation}
-        />
+        {
+          customs.map(c => {
+            return(
+              <Custom
+                key={c.id}
+                id={c.id}
+                image={c.image}
+                name={c.name}
+                location={c.location}
+                explanation={c.explanation}
+              />
+            )
+          })
+        }
+        
       </div>
 
 
