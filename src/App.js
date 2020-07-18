@@ -31,21 +31,7 @@ class App extends Component {
   render () {
     return (
       <div>
-        {
-          customs.map(c => {
-            return(
-              <Custom
-                key={c.id}
-                id={c.id}
-                image={c.image}
-                name={c.name}
-                location={c.location}
-                explanation={c.explanation}
-              />
-            )
-          })
-        }
-        
+        {customs.map(c => { return ( <Custom key={c.id} id={c.id} image={c.image} name={c.name} location={c.location} explanation={c.explanation} /> )})}
       </div>
 
 
