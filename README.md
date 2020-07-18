@@ -1,3 +1,6 @@
+## Silk Road Help
+This is the IDST Capstone project that will help people who wants to know about the Silk Road.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
